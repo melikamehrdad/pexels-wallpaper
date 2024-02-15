@@ -1,5 +1,5 @@
 
-wallpaper_project
+## Wallpaper project
 
 A new Wallpaper Flutter project. This project can be used on iOS, Android, and web platforms.
 
