@@ -9,7 +9,7 @@ class WallpaperRepository {
         Uri.parse('https://api.pexels.com/v1/curated?page=$page&per_page=20'),
         headers: {
           'Authorization':
-              'YOUR-TOKEN-HERE',
+              'dRqfYTRMyHaxASyoYLrWcYKXSoYHQmZBc5WReYOLO7OxCwmpYVBq9ITG',
         });
     if (response.statusCode == 200) {
       final jsonBody = json.decode(response.body);

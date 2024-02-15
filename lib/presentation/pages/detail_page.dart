@@ -47,11 +47,19 @@ class _WallpaperDetailPageState extends State<WallpaperDetailPage> {
                 height: 20,
               ),
 
-              Text(
-                widget.wallpaper.photographer,
-                style: const TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
+              Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    detailImageData(
+                        'Photographer : ${widget.wallpaper.photographer}'),
+                    detailImageData(
+                        'Photographer Url : ${widget.wallpaper.photographerUrl}'),
+                    detailImageData('Image Url : ${widget.wallpaper.url}'),
+                    detailImageData(
+                        'Image avg color : ${widget.wallpaper.avgColor}'),
+                  ],
                 ),
               ),
 
@@ -71,6 +79,21 @@ class _WallpaperDetailPageState extends State<WallpaperDetailPage> {
           ),
         ),
       ),
+    );
+  }
+
+  detailImageData(String title) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          title,
+          style: const TextStyle(
+            fontSize: 18,
+          ),
+        ),
+        const Divider(),
+      ],
     );
   }
 }
