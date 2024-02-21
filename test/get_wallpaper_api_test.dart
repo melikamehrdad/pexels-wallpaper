@@ -9,7 +9,7 @@ void main() {
     Uri wallpapers = Uri.parse('https://api.pexels.com/v1/curated?per_page=20');
     final response = await http.get(wallpapers, headers: {
       'Authorization':
-          'dRqfYTRMyHaxASyoYLrWcYKXSoYHQmZBc5WReYOLO7OxCwmpYVBq9ITG',
+          'YOUR-TOKEN-HERE',
     });
     if (response.statusCode == 200) {
       final Map wallpaperJSON = jsonDecode(response.body);

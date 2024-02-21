@@ -9,17 +9,17 @@ void main() {
   testWidgets('WallpaperDetailPage displays wallpaper details', (WidgetTester tester) async {
     // Create a mock wallpaper model
     final wallpaper = WallpaperModel(
-      photographer: 'John Doe',
+      photographer: 'James Superschoolnews',
       alt: 'A beautiful wallpaper',
-      avgColor: '#000000',
+      avgColor: '#1F1110',
       height: 1000,
       width: 2000,
       id: 1,
-      url: 'https://example.com/image.jpg',
+      url: 'https://www.pexels.com/photo/silhouette-of-a-woman-in-red-sunglasses-20249586/',
       liked: false,
       photographerId: 1,
-      photographerUrl: 'https://example.com/johndoe',
-      src: {'large2x': 'https://example.com/image.jpg'},
+      photographerUrl: 'https://www.pexels.com/@james-superschoolnews-349383308',
+      src: {'large2x': 'https://images.pexels.com/photos/20249586/pexels-photo-20249586.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'},
     );
 
     // Build the WallpaperDetailPage widget
@@ -30,7 +30,7 @@ void main() {
     );
 
     // Verify that the photographer name is displayed
-    expect(find.text('John Doe'), findsOneWidget);
+    expect(find.text('James Superschoolnews'), findsOneWidget);
 
     // Verify that the image widget is displayed
     expect(find.byType(ImageWidget), findsOneWidget);

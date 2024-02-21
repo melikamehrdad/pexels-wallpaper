@@ -47,7 +47,7 @@ void main() {
       const homePage = HomePage();
       wallpapers.addAll([
         WallpaperModel(
-          photographer: 'Jane Smith',
+          photographer: 'James Superschoolnews',
           alt: 'Beautiful landscape',
           avgColor: 'rgb(0, 0, 0)',
           height: 1000,
@@ -55,12 +55,12 @@ void main() {
           id: 1,
           liked: false,
           photographerId: 1,
-          photographerUrl: 'https://example.com/johndoe',
+          photographerUrl: 'https://example.com/james',
           url: 'https://example.com/image.jpg',
           src: {'tiny': 'https://example.com/image.jpg'},
         ),
         WallpaperModel(
-          photographer: 'John Doe',
+          photographer: 'Nguyễn Bảo Trung',
           alt: 'Beautiful landscape',
           avgColor: 'rgb(0, 0, 0)',
           height: 1000,
@@ -68,7 +68,7 @@ void main() {
           id: 1,
           liked: false,
           photographerId: 1,
-          photographerUrl: 'https://example.com/johndoe',
+          photographerUrl: 'https://example.com/nguy',
           url: 'https://example.com/image.jpg',
           src: {'tiny': 'https://example.com/image.jpg'},
         ),
